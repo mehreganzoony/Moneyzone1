@@ -357,7 +357,12 @@
     display: inline-block;
     background: var(--accent-green-dim); color: var(--accent-green);
     border-radius: 100px; padding: 3px 10px;
-    font-size: 0.75rem; font-weight: 600; margin-bottom: 24px;
+    font-size: 0.75rem; font-weight: 600; margin-bottom: 10px;
+  }
+
+  .plan-tag {
+    font-size: 0.8rem; font-weight: 600;
+    color: var(--text-secondary); margin-bottom: 20px;
   }
 
   .plan-features { list-style: none; margin-bottom: 28px; }
@@ -1373,6 +1378,7 @@
       <div class="plan-name">Monthly</div>
       <div class="plan-price">$90<span>/mo</span></div>
       <div class="plan-period">Billed monthly</div>
+      <div class="plan-tag">For testing the service ✅</div>
       <ul class="plan-features">
         <li>All 5 Markets Coverage</li>
         <li>Real-Time Telegram Signals</li>
@@ -1388,6 +1394,7 @@
       <div class="plan-price">$240<span>/3mo</span></div>
       <div class="plan-period">$80/month</div>
       <div class="plan-save">Save $30</div>
+      <div class="plan-tag">Recommended💥</div>
       <ul class="plan-features">
         <li>All 5 Markets Coverage</li>
         <li>Real-Time Telegram Signals</li>
@@ -1404,6 +1411,7 @@
       <div class="plan-price">$450<span>/6mo</span></div>
       <div class="plan-period">$75/month</div>
       <div class="plan-save">Save $90</div>
+      <div class="plan-tag">Best deal💎</div>
       <ul class="plan-features">
         <li>All 5 Markets Coverage</li>
         <li>Real-Time Telegram Signals</li>
@@ -1419,6 +1427,7 @@
       <div class="plan-price">$880<span>/yr</span></div>
       <div class="plan-period">$73.3/month</div>
       <div class="plan-save">Save $200</div>
+      <div class="plan-tag">Ultimate plan⭐</div>
       <ul class="plan-features">
         <li>All 5 Markets Coverage</li>
         <li>Real-Time Telegram Signals</li>
@@ -1518,7 +1527,8 @@
       <div style="background:var(--bg-secondary); border:1px solid var(--border-subtle); border-radius:14px; padding:24px 20px; transition:transform 0.2s, border-color 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.borderColor='var(--border)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='var(--border-subtle)'">
         <div style="font-size:0.75rem; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:12px;">Monthly</div>
         <div style="font-family:'Space Grotesk',sans-serif; font-size:2.2rem; font-weight:700; margin-bottom:2px;">$90<span style="font-size:1rem; font-weight:500; color:var(--text-secondary);">/mo</span></div>
-        <div style="font-size:0.78rem; color:var(--text-muted); margin-bottom:20px;">Billed monthly</div>
+        <div style="font-size:0.78rem; color:var(--text-muted); margin-bottom:6px;">Billed monthly</div>
+        <div style="font-size:0.78rem; font-weight:600; color:var(--text-secondary); margin-bottom:16px;">For testing the service ✅</div>
         <ul style="list-style:none; margin-bottom:24px;">
           <li style="font-size:0.82rem; color:var(--text-secondary); padding:5px 0; border-bottom:1px solid var(--border-subtle); display:flex; align-items:center; gap:7px;"><span style="color:var(--accent-green); font-weight:700; font-size:0.8rem;">✓</span> All 5 Markets</li>
           <li style="font-size:0.82rem; color:var(--text-secondary); padding:5px 0; border-bottom:1px solid var(--border-subtle); display:flex; align-items:center; gap:7px;"><span style="color:var(--accent-green); font-weight:700; font-size:0.8rem;">✓</span> Real-Time Signals</li>
@@ -1534,7 +1544,8 @@
         <div style="font-size:0.75rem; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:12px;">3 Months</div>
         <div style="font-family:'Space Grotesk',sans-serif; font-size:2.2rem; font-weight:700; margin-bottom:2px;">$240<span style="font-size:1rem; font-weight:500; color:var(--text-secondary);">/3mo</span></div>
         <div style="font-size:0.78rem; color:var(--text-muted); margin-bottom:6px;">$80/month</div>
-        <div style="display:inline-block; background:var(--accent-green-dim); color:var(--accent-green); border-radius:100px; padding:2px 10px; font-size:0.72rem; font-weight:600; margin-bottom:16px;">Save $30</div>
+        <div style="display:inline-block; background:var(--accent-green-dim); color:var(--accent-green); border-radius:100px; padding:2px 10px; font-size:0.72rem; font-weight:600; margin-bottom:8px;">Save $30</div>
+        <div style="font-size:0.78rem; font-weight:600; color:var(--text-secondary); margin-bottom:16px;">Recommended💥</div>
         <ul style="list-style:none; margin-bottom:24px;">
           <li style="font-size:0.82rem; color:var(--text-secondary); padding:5px 0; border-bottom:1px solid var(--border-subtle); display:flex; align-items:center; gap:7px;"><span style="color:var(--accent-green); font-weight:700; font-size:0.8rem;">✓</span> All 5 Markets</li>
           <li style="font-size:0.82rem; color:var(--text-secondary); padding:5px 0; border-bottom:1px solid var(--border-subtle); display:flex; align-items:center; gap:7px;"><span style="color:var(--accent-green); font-weight:700; font-size:0.8rem;">✓</span> Real-Time Signals</li>
@@ -1551,7 +1562,8 @@
         <div style="font-size:0.75rem; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:12px;">6 Months</div>
         <div style="font-family:'Space Grotesk',sans-serif; font-size:2.2rem; font-weight:700; margin-bottom:2px;">$450<span style="font-size:1rem; font-weight:500; color:var(--text-secondary);">/6mo</span></div>
         <div style="font-size:0.78rem; color:var(--text-muted); margin-bottom:6px;">$75/month</div>
-        <div style="display:inline-block; background:var(--accent-green-dim); color:var(--accent-green); border-radius:100px; padding:2px 10px; font-size:0.72rem; font-weight:600; margin-bottom:16px;">Save $90</div>
+        <div style="display:inline-block; background:var(--accent-green-dim); color:var(--accent-green); border-radius:100px; padding:2px 10px; font-size:0.72rem; font-weight:600; margin-bottom:8px;">Save $90</div>
+        <div style="font-size:0.78rem; font-weight:600; color:var(--text-secondary); margin-bottom:16px;">Best deal💎</div>
         <ul style="list-style:none; margin-bottom:24px;">
           <li style="font-size:0.82rem; color:var(--text-secondary); padding:5px 0; border-bottom:1px solid var(--border-subtle); display:flex; align-items:center; gap:7px;"><span style="color:var(--accent-green); font-weight:700; font-size:0.8rem;">✓</span> All 5 Markets</li>
           <li style="font-size:0.82rem; color:var(--text-secondary); padding:5px 0; border-bottom:1px solid var(--border-subtle); display:flex; align-items:center; gap:7px;"><span style="color:var(--accent-green); font-weight:700; font-size:0.8rem;">✓</span> Real-Time Signals</li>
@@ -1567,7 +1579,8 @@
         <div style="font-size:0.75rem; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:12px;">Annual</div>
         <div style="font-family:'Space Grotesk',sans-serif; font-size:2.2rem; font-weight:700; margin-bottom:2px;">$880<span style="font-size:1rem; font-weight:500; color:var(--text-secondary);">/yr</span></div>
         <div style="font-size:0.78rem; color:var(--text-muted); margin-bottom:6px;">$73.3/month</div>
-        <div style="display:inline-block; background:var(--accent-green-dim); color:var(--accent-green); border-radius:100px; padding:2px 10px; font-size:0.72rem; font-weight:600; margin-bottom:16px;">Save $200</div>
+        <div style="display:inline-block; background:var(--accent-green-dim); color:var(--accent-green); border-radius:100px; padding:2px 10px; font-size:0.72rem; font-weight:600; margin-bottom:8px;">Save $200</div>
+        <div style="font-size:0.78rem; font-weight:600; color:var(--text-secondary); margin-bottom:16px;">Ultimate plan⭐</div>
         <ul style="list-style:none; margin-bottom:24px;">
           <li style="font-size:0.82rem; color:var(--text-secondary); padding:5px 0; border-bottom:1px solid var(--border-subtle); display:flex; align-items:center; gap:7px;"><span style="color:var(--accent-green); font-weight:700; font-size:0.8rem;">✓</span> All 5 Markets</li>
           <li style="font-size:0.82rem; color:var(--text-secondary); padding:5px 0; border-bottom:1px solid var(--border-subtle); display:flex; align-items:center; gap:7px;"><span style="color:var(--accent-green); font-weight:700; font-size:0.8rem;">✓</span> Real-Time Signals</li>
