@@ -1374,11 +1374,11 @@
 
   <div class="pricing-grid">
 
-    <div class="plan-card">
+    <div class="plan-card popular">
+      <div class="popular-badge">FOR TESTING OUR SERVICE</div>
       <div class="plan-name">Monthly</div>
       <div class="plan-price">$90<span>/mo</span></div>
       <div class="plan-period">Billed monthly</div>
-      <div class="plan-tag">For testing the service ✅</div>
       <ul class="plan-features">
         <li>All 5 Markets Coverage</li>
         <li>Real-Time Telegram Signals</li>
@@ -1386,10 +1386,11 @@
         <li>Risk Management Guide</li>
         <li>Analyst Support</li>
       </ul>
-      <button onclick="openPayment('Monthly','$90/month')" class="plan-btn plan-btn-outline">Get Started</button>
+      <button onclick="openPayment('Monthly','$90/month')" class="plan-btn plan-btn-solid">Get Started</button>
     </div>
 
-    <div class="plan-card">
+    <div class="plan-card popular">
+      <div class="popular-badge">RECOMMENDED</div>
       <div class="plan-name">3 Months</div>
       <div class="plan-price">$240<span>/3mo</span></div>
       <div class="plan-period">$80/month</div>
@@ -1402,7 +1403,7 @@
         <li>Risk Management Guide</li>
         <li>Analyst Support</li>
       </ul>
-      <button onclick="openPayment('3 Months','$240 ($80/month)')" class="plan-btn plan-btn-outline">Get Started</button>
+      <button onclick="openPayment('3 Months','$240 ($80/month)')" class="plan-btn plan-btn-solid">Get Started</button>
     </div>
 
     <div class="plan-card popular">
@@ -1422,12 +1423,12 @@
       <button onclick="openPayment('6 Months','$450 ($75/month)')" class="plan-btn plan-btn-solid">Get Started</button>
     </div>
 
-    <div class="plan-card">
+    <div class="plan-card popular">
+      <div class="popular-badge">ULTIMATE PLAN</div>
       <div class="plan-name">Annual</div>
       <div class="plan-price">$880<span>/yr</span></div>
       <div class="plan-period">$73.3/month</div>
       <div class="plan-save">Save $200</div>
-      <div class="plan-tag">Ultimate plan⭐</div>
       <ul class="plan-features">
         <li>All 5 Markets Coverage</li>
         <li>Real-Time Telegram Signals</li>
@@ -1435,7 +1436,7 @@
         <li>Risk Management Guide</li>
         <li>VIP Priority Support</li>
       </ul>
-      <button onclick="openPayment('Annual','$880 ($73.3/month)')" class="plan-btn plan-btn-outline">Get Started</button>
+      <button onclick="openPayment('Annual','$880 ($73.3/month)')" class="plan-btn plan-btn-solid">Get Started</button>
     </div>
 
   </div>
@@ -1523,12 +1524,12 @@
     <!-- Plans Grid -->
     <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:16px;">
 
-      <!-- Monthly -->
-      <div style="background:var(--bg-secondary); border:1px solid var(--border-subtle); border-radius:14px; padding:24px 20px; transition:transform 0.2s, border-color 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.borderColor='var(--border)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='var(--border-subtle)'">
+      <!-- Monthly (For Testing) -->
+      <div style="background:linear-gradient(160deg,#0f1f38,#0d1c33); border:1px solid var(--accent-blue); border-radius:14px; padding:24px 20px; position:relative; transition:transform 0.2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+        <div style="position:absolute; top:-11px; left:50%; transform:translateX(-50%); background:linear-gradient(135deg,var(--accent-blue),var(--accent-green)); color:#fff; border-radius:100px; padding:3px 14px; font-size:0.7rem; font-weight:700; letter-spacing:0.05em; white-space:nowrap;">FOR TESTING OUR SERVICE</div>
         <div style="font-size:0.75rem; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:12px;">Monthly</div>
         <div style="font-family:'Space Grotesk',sans-serif; font-size:2.2rem; font-weight:700; margin-bottom:2px;">$90<span style="font-size:1rem; font-weight:500; color:var(--text-secondary);">/mo</span></div>
-        <div style="font-size:0.78rem; color:var(--text-muted); margin-bottom:6px;">Billed monthly</div>
-        <div style="font-size:0.78rem; font-weight:600; color:var(--text-secondary); margin-bottom:16px;">For testing the service ✅</div>
+        <div style="font-size:0.78rem; color:var(--text-muted); margin-bottom:20px;">Billed monthly</div>
         <ul style="list-style:none; margin-bottom:24px;">
           <li style="font-size:0.82rem; color:var(--text-secondary); padding:5px 0; border-bottom:1px solid var(--border-subtle); display:flex; align-items:center; gap:7px;"><span style="color:var(--accent-green); font-weight:700; font-size:0.8rem;">✓</span> All 5 Markets</li>
           <li style="font-size:0.82rem; color:var(--text-secondary); padding:5px 0; border-bottom:1px solid var(--border-subtle); display:flex; align-items:center; gap:7px;"><span style="color:var(--accent-green); font-weight:700; font-size:0.8rem;">✓</span> Real-Time Signals</li>
@@ -1536,11 +1537,12 @@
           <li style="font-size:0.82rem; color:var(--text-secondary); padding:5px 0; border-bottom:1px solid var(--border-subtle); display:flex; align-items:center; gap:7px;"><span style="color:var(--accent-green); font-weight:700; font-size:0.8rem;">✓</span> Risk Management</li>
           <li style="font-size:0.82rem; color:var(--text-secondary); padding:5px 0; display:flex; align-items:center; gap:7px;"><span style="color:var(--accent-green); font-weight:700; font-size:0.8rem;">✓</span> Analyst Support</li>
         </ul>
-        <button onclick="openPayment('Monthly','$90/month')" style="display:block; width:100%; text-align:center; padding:11px; border-radius:10px; font-size:0.85rem; font-weight:600; cursor:pointer; background:transparent; border:1px solid var(--border); color:var(--text-primary); transition:border-color 0.2s, background 0.2s;" onmouseover="this.style.borderColor='var(--accent-blue-light)';this.style.background='rgba(26,108,245,0.08)'" onmouseout="this.style.borderColor='var(--border)';this.style.background='transparent'">Get Started</button>
+        <button onclick="openPayment('Monthly','$90/month')" style="display:block; width:100%; text-align:center; padding:11px; border-radius:10px; font-size:0.85rem; font-weight:600; cursor:pointer; background:linear-gradient(135deg,var(--accent-blue),#0f52cc); color:#fff; box-shadow:0 4px 16px rgba(26,108,245,0.35); border:none; transition:transform 0.15s, box-shadow 0.15s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px rgba(26,108,245,0.45)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 16px rgba(26,108,245,0.35)'">Get Started</button>
       </div>
 
-      <!-- 3 Months -->
-      <div style="background:var(--bg-secondary); border:1px solid var(--border-subtle); border-radius:14px; padding:24px 20px; transition:transform 0.2s, border-color 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.borderColor='var(--border)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='var(--border-subtle)'">
+      <!-- 3 Months (Recommended) -->
+      <div style="background:linear-gradient(160deg,#0f1f38,#0d1c33); border:1px solid var(--accent-blue); border-radius:14px; padding:24px 20px; position:relative; transition:transform 0.2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+        <div style="position:absolute; top:-11px; left:50%; transform:translateX(-50%); background:linear-gradient(135deg,var(--accent-blue),var(--accent-green)); color:#fff; border-radius:100px; padding:3px 14px; font-size:0.7rem; font-weight:700; letter-spacing:0.05em; white-space:nowrap;">RECOMMENDED</div>
         <div style="font-size:0.75rem; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:12px;">3 Months</div>
         <div style="font-family:'Space Grotesk',sans-serif; font-size:2.2rem; font-weight:700; margin-bottom:2px;">$240<span style="font-size:1rem; font-weight:500; color:var(--text-secondary);">/3mo</span></div>
         <div style="font-size:0.78rem; color:var(--text-muted); margin-bottom:6px;">$80/month</div>
@@ -1553,7 +1555,7 @@
           <li style="font-size:0.82rem; color:var(--text-secondary); padding:5px 0; border-bottom:1px solid var(--border-subtle); display:flex; align-items:center; gap:7px;"><span style="color:var(--accent-green); font-weight:700; font-size:0.8rem;">✓</span> Risk Management</li>
           <li style="font-size:0.82rem; color:var(--text-secondary); padding:5px 0; display:flex; align-items:center; gap:7px;"><span style="color:var(--accent-green); font-weight:700; font-size:0.8rem;">✓</span> Analyst Support</li>
         </ul>
-        <button onclick="openPayment('3 Months','$240 ($80/month)')" style="display:block; width:100%; text-align:center; padding:11px; border-radius:10px; font-size:0.85rem; font-weight:600; cursor:pointer; background:transparent; border:1px solid var(--border); color:var(--text-primary); transition:border-color 0.2s, background 0.2s;" onmouseover="this.style.borderColor='var(--accent-blue-light)';this.style.background='rgba(26,108,245,0.08)'" onmouseout="this.style.borderColor='var(--border)';this.style.background='transparent'">Get Started</button>
+        <button onclick="openPayment('3 Months','$240 ($80/month)')" style="display:block; width:100%; text-align:center; padding:11px; border-radius:10px; font-size:0.85rem; font-weight:600; cursor:pointer; background:linear-gradient(135deg,var(--accent-blue),#0f52cc); color:#fff; box-shadow:0 4px 16px rgba(26,108,245,0.35); border:none; transition:transform 0.15s, box-shadow 0.15s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px rgba(26,108,245,0.45)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 16px rgba(26,108,245,0.35)'">Get Started</button>
       </div>
 
       <!-- 6 Months (Best Value) -->
@@ -1574,13 +1576,13 @@
         <button onclick="openPayment('6 Months','$450 ($75/month)')" style="display:block; width:100%; text-align:center; padding:11px; border-radius:10px; font-size:0.85rem; font-weight:600; cursor:pointer; background:linear-gradient(135deg,var(--accent-blue),#0f52cc); color:#fff; box-shadow:0 4px 16px rgba(26,108,245,0.35); border:none; transition:transform 0.15s, box-shadow 0.15s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px rgba(26,108,245,0.45)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 16px rgba(26,108,245,0.35)'">Get Started</button>
       </div>
 
-      <!-- Annual -->
-      <div style="background:var(--bg-secondary); border:1px solid var(--border-subtle); border-radius:14px; padding:24px 20px; transition:transform 0.2s, border-color 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.borderColor='var(--border)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='var(--border-subtle)'">
+      <!-- Annual (Ultimate Plan) -->
+      <div style="background:linear-gradient(160deg,#0f1f38,#0d1c33); border:1px solid var(--accent-blue); border-radius:14px; padding:24px 20px; position:relative; transition:transform 0.2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+        <div style="position:absolute; top:-11px; left:50%; transform:translateX(-50%); background:linear-gradient(135deg,var(--accent-blue),var(--accent-green)); color:#fff; border-radius:100px; padding:3px 14px; font-size:0.7rem; font-weight:700; letter-spacing:0.05em; white-space:nowrap;">ULTIMATE PLAN</div>
         <div style="font-size:0.75rem; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:12px;">Annual</div>
         <div style="font-family:'Space Grotesk',sans-serif; font-size:2.2rem; font-weight:700; margin-bottom:2px;">$880<span style="font-size:1rem; font-weight:500; color:var(--text-secondary);">/yr</span></div>
         <div style="font-size:0.78rem; color:var(--text-muted); margin-bottom:6px;">$73.3/month</div>
-        <div style="display:inline-block; background:var(--accent-green-dim); color:var(--accent-green); border-radius:100px; padding:2px 10px; font-size:0.72rem; font-weight:600; margin-bottom:8px;">Save $200</div>
-        <div style="font-size:0.78rem; font-weight:600; color:var(--text-secondary); margin-bottom:16px;">Ultimate plan⭐</div>
+        <div style="display:inline-block; background:var(--accent-green-dim); color:var(--accent-green); border-radius:100px; padding:2px 10px; font-size:0.72rem; font-weight:600; margin-bottom:16px;">Save $200</div>
         <ul style="list-style:none; margin-bottom:24px;">
           <li style="font-size:0.82rem; color:var(--text-secondary); padding:5px 0; border-bottom:1px solid var(--border-subtle); display:flex; align-items:center; gap:7px;"><span style="color:var(--accent-green); font-weight:700; font-size:0.8rem;">✓</span> All 5 Markets</li>
           <li style="font-size:0.82rem; color:var(--text-secondary); padding:5px 0; border-bottom:1px solid var(--border-subtle); display:flex; align-items:center; gap:7px;"><span style="color:var(--accent-green); font-weight:700; font-size:0.8rem;">✓</span> Real-Time Signals</li>
@@ -1588,7 +1590,7 @@
           <li style="font-size:0.82rem; color:var(--text-secondary); padding:5px 0; border-bottom:1px solid var(--border-subtle); display:flex; align-items:center; gap:7px;"><span style="color:var(--accent-green); font-weight:700; font-size:0.8rem;">✓</span> Risk Management</li>
           <li style="font-size:0.82rem; color:var(--text-secondary); padding:5px 0; display:flex; align-items:center; gap:7px;"><span style="color:var(--accent-green); font-weight:700; font-size:0.8rem;">✓</span> VIP Priority Support</li>
         </ul>
-        <button onclick="openPayment('Annual','$880 ($73.3/month)')" style="display:block; width:100%; text-align:center; padding:11px; border-radius:10px; font-size:0.85rem; font-weight:600; cursor:pointer; background:transparent; border:1px solid var(--border); color:var(--text-primary); transition:border-color 0.2s, background 0.2s;" onmouseover="this.style.borderColor='var(--accent-blue-light)';this.style.background='rgba(26,108,245,0.08)'" onmouseout="this.style.borderColor='var(--border)';this.style.background='transparent'">Get Started</button>
+        <button onclick="openPayment('Annual','$880 ($73.3/month)')" style="display:block; width:100%; text-align:center; padding:11px; border-radius:10px; font-size:0.85rem; font-weight:600; cursor:pointer; background:linear-gradient(135deg,var(--accent-blue),#0f52cc); color:#fff; box-shadow:0 4px 16px rgba(26,108,245,0.35); border:none; transition:transform 0.15s, box-shadow 0.15s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px rgba(26,108,245,0.45)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 16px rgba(26,108,245,0.35)'">Get Started</button>
       </div>
 
     </div>
