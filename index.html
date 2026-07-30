@@ -1182,7 +1182,7 @@
     { q: "What lot size should I use?", a: "Lot size depends on your account margin and balance. That said, we recommend risking only 1-2% of your capital per trade." },
     { q: "Can I copy the signals manually?", a: "Yes. Once you join our VIP signal channel, you'll see every signal clearly and can easily copy and execute them manually." },
     { q: "How do I join the VIP channel?", a: "Click \"Get Started\" on the site, choose your subscription plan, complete payment, and send the transaction hash to our Telegram ID. As soon as the transaction is confirmed, you'll receive the VIP channel invite link." },
-    { q: "What payment methods do you accept?", a: "We only accept USDT on the TRC20 network." },
+    { q: "What payment methods do you accept?", a: "We accept USDT (TRC20 or BEP20 network) and Bitcoin (BTC)." },
     { q: "Can I cancel my subscription anytime?", a: "Yes — we stand behind our signals. If your portfolio isn't in profit after one to two months of following our signals, you can request a cancellation and get a refund of what you paid." },
     { q: "Do you offer refunds?", a: "Yes, if your portfolio hasn't shown profit within one to two months of using our signals, you're eligible to request a refund." },
     { q: "What makes Money Zone Club different from other signal providers?", a: "Two things. First, our monthly performance is consistently profitable — and if it isn't within one to two months, you can request a refund. Second, we know risk management matters just as much as the signal itself, which is why we also provide a free assistant bot to help you manage risk effectively." },
@@ -1736,16 +1736,37 @@
     <div style="background:var(--bg-secondary); border:1px solid var(--border-subtle); border-radius:14px; padding:20px; margin-bottom:16px;">
       <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;">
         <div style="width:26px; height:26px; background:linear-gradient(135deg,var(--accent-blue),var(--accent-green)); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:700; color:#fff; flex-shrink:0;">1</div>
-        <div style="font-weight:600; font-size:0.95rem;">Send USDT to this wallet</div>
+        <div style="font-weight:600; font-size:0.95rem;">Send payment to one of these wallets</div>
       </div>
+
+      <!-- USDT TRC20 -->
       <div style="background:rgba(38,161,123,0.08); border:1px solid rgba(38,161,123,0.25); border-radius:10px; padding:14px 16px; margin-bottom:10px;">
         <div style="font-size:0.72rem; color:var(--text-muted); margin-bottom:6px; text-transform:uppercase; letter-spacing:0.05em;">USDT Wallet Address (TRC20)</div>
         <div style="font-family:monospace; font-size:0.88rem; color:#fff; word-break:break-all; line-height:1.5;">TNZJBKkQfBrXnkjAzDvq3kHut1QuhEuhh1</div>
       </div>
-      <button onclick="copyWallet()" id="copy-btn" style="width:100%; padding:9px; border-radius:9px; border:1px solid rgba(38,161,123,0.3); background:rgba(38,161,123,0.08); color:#26a17b; font-size:0.82rem; font-weight:600; cursor:pointer; transition:background 0.2s;" onmouseover="this.style.background='rgba(38,161,123,0.15)'" onmouseout="this.style.background='rgba(38,161,123,0.08)'">
-        📋 Copy Wallet Address
+      <button onclick="copyWallet('TNZJBKkQfBrXnkjAzDvq3kHut1QuhEuhh1','copy-btn-trc20')" id="copy-btn-trc20" style="width:100%; padding:9px; border-radius:9px; border:1px solid rgba(38,161,123,0.3); background:rgba(38,161,123,0.08); color:#26a17b; font-size:0.82rem; font-weight:600; cursor:pointer; transition:background 0.2s; margin-bottom:16px;" onmouseover="this.style.background='rgba(38,161,123,0.15)'" onmouseout="this.style.background='rgba(38,161,123,0.08)'">
+        📋 Copy TRC20 Address
       </button>
-      <div style="margin-top:10px; font-size:0.78rem; color:var(--text-muted); text-align:center;">⚠️ Only send on the <strong style="color:#fff;">TRC20</strong> network</div>
+
+      <!-- USDT BEP20 -->
+      <div style="background:rgba(243,186,47,0.08); border:1px solid rgba(243,186,47,0.25); border-radius:10px; padding:14px 16px; margin-bottom:10px;">
+        <div style="font-size:0.72rem; color:var(--text-muted); margin-bottom:6px; text-transform:uppercase; letter-spacing:0.05em;">USDT Wallet Address (BEP20)</div>
+        <div style="font-family:monospace; font-size:0.88rem; color:#fff; word-break:break-all; line-height:1.5;">0x54E788c7bf1D5b96A26bb05bE2ac65e0267671e9</div>
+      </div>
+      <button onclick="copyWallet('0x54E788c7bf1D5b96A26bb05bE2ac65e0267671e9','copy-btn-bep20')" id="copy-btn-bep20" style="width:100%; padding:9px; border-radius:9px; border:1px solid rgba(243,186,47,0.3); background:rgba(243,186,47,0.08); color:#f3ba2f; font-size:0.82rem; font-weight:600; cursor:pointer; transition:background 0.2s; margin-bottom:16px;" onmouseover="this.style.background='rgba(243,186,47,0.15)'" onmouseout="this.style.background='rgba(243,186,47,0.08)'">
+        📋 Copy BEP20 Address
+      </button>
+
+      <!-- Bitcoin -->
+      <div style="background:rgba(247,147,26,0.08); border:1px solid rgba(247,147,26,0.25); border-radius:10px; padding:14px 16px; margin-bottom:10px;">
+        <div style="font-size:0.72rem; color:var(--text-muted); margin-bottom:6px; text-transform:uppercase; letter-spacing:0.05em;">Bitcoin Wallet Address (BTC)</div>
+        <div style="font-family:monospace; font-size:0.88rem; color:#fff; word-break:break-all; line-height:1.5;">bc1q9e8h5mg79as5vumlqsyekqm68a0ce77p3wn2um</div>
+      </div>
+      <button onclick="copyWallet('bc1q9e8h5mg79as5vumlqsyekqm68a0ce77p3wn2um','copy-btn-btc')" id="copy-btn-btc" style="width:100%; padding:9px; border-radius:9px; border:1px solid rgba(247,147,26,0.3); background:rgba(247,147,26,0.08); color:#f7931a; font-size:0.82rem; font-weight:600; cursor:pointer; transition:background 0.2s;" onmouseover="this.style.background='rgba(247,147,26,0.15)'" onmouseout="this.style.background='rgba(247,147,26,0.08)'">
+        📋 Copy Bitcoin Address
+      </button>
+
+      <div style="margin-top:14px; font-size:0.78rem; color:var(--text-muted); text-align:center;">⚠️ Make sure to send USDT only on the <strong style="color:#fff;">correct network</strong> (TRC20 or BEP20) shown above</div>
     </div>
 
     <!-- Step 2: Telegram -->
@@ -1777,11 +1798,12 @@
     document.getElementById('payment-modal').style.display = 'flex';
   }
 
-  function copyWallet() {
-    navigator.clipboard.writeText('TNZJBKkQfBrXnkjAzDvq3kHut1QuhEuhh1').then(function() {
-      const btn = document.getElementById('copy-btn');
+  function copyWallet(address, btnId) {
+    navigator.clipboard.writeText(address).then(function() {
+      const btn = document.getElementById(btnId);
+      const original = btn.textContent;
       btn.textContent = '✅ Copied!';
-      setTimeout(function() { btn.textContent = '📋 Copy Wallet Address'; }, 2000);
+      setTimeout(function() { btn.textContent = original; }, 2000);
     });
   }
 </script>
